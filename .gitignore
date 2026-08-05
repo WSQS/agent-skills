@@ -1,0 +1,4 @@
+# Skill-local junctions to ../shared (recreate with scripts/link-shared.ps1)
+skills/on-write/shared
+skills/on-submit/shared
+skills/write-skill/shared
