@@ -44,6 +44,15 @@ Before editing skill text, read [`shared/minimal-diff.md`](shared/minimal-diff.m
 - Prefer English in this repo's skill and shared files.
 - Progressive disclosure: keep `SKILL.md` short; link details instead of inlining textbooks.
 
+### Numbered sequences
+
+**Done when:** every `1.` / `2.`-style numeric run in the draft has been found and either kept for a stated reason or removed.
+
+- Search for numbered runs (`1.`, `2.`, `3.` …), including numbered headings (`### 1. …`).
+- For each run: would order be unclear without the numerals?
+- If document order plus Done when (or plain bullets) already fix sequence, remove the numbers.
+- Keep numerals only when the reader must cite a step index, follow a fixed external checklist, or skip/jump by number.
+
 ### Self-check
 
 **Done when:** every hunk passes Necessity / Alignment / Noise; description cannot be shortened further without losing ignition; procedures are not sitting in `shared/`.
