@@ -6,9 +6,9 @@ description: >-
 
 # On Write
 
-## Required principle
+## Required criteria
 
-Before any edit, read [`shared/minimal-diff.md`](shared/minimal-diff.md) and keep applying it until the write is done.
+Before any edit, read [`shared/minimal-diff.md`](shared/minimal-diff.md).
 
 ## Steps
 
@@ -18,7 +18,7 @@ Before any edit, read [`shared/minimal-diff.md`](shared/minimal-diff.md) and kee
 
 - Restate the task (outcome, not implementation).
 - List intended surfaces, or "discover then lock".
-- Name refused drive-bys (see the principle).
+- Name refused drive-bys (see Necessity / Alignment / Noise in [`shared/minimal-diff.md`](shared/minimal-diff.md)).
 - If unclear, ask before writing.
 
 ### Edit
@@ -26,11 +26,11 @@ Before any edit, read [`shared/minimal-diff.md`](shared/minimal-diff.md) and kee
 **Done when:** working-tree changes are only those required by the scoped task.
 
 - Touch only required files; prefer local fixes; match existing style.
-- Apply the principle continuously; do not restate its violation table here.
+- Apply Necessity / Alignment / Noise in [`shared/minimal-diff.md`](shared/minimal-diff.md) continuously; do not restate their violation table here.
 
 ### Self-check
 
-**Done when:** every hunk passes Necessity / Alignment / Noise; failures reverted; ready to present.
+**Done when:** every hunk passes Necessity / Alignment / Noise in [`shared/minimal-diff.md`](shared/minimal-diff.md); failures reverted; ready to present.
 
 - If the human tightens scope, strip to that boundary—do not re-argue.
 - No submit-phase reading guide here → **on-submit**.
