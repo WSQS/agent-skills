@@ -9,9 +9,9 @@ description: >-
 
 **Default:** explain and orient; **do not edit** unless the human asks after the guide.
 
-## Required principle
+## Required criteria
 
-Before surveying, read [`shared/minimal-diff.md`](shared/minimal-diff.md). Use Necessity / Alignment / Noise in **Risks**.
+Before surveying, read [`shared/minimal-diff.md`](shared/minimal-diff.md).
 
 ## Steps
 
@@ -29,7 +29,7 @@ Before surveying, read [`shared/minimal-diff.md`](shared/minimal-diff.md). Use N
 1. **Task restatement** — claimed outcome (not a file list)
 2. **Map** — touched files/symbols; one line why (`path:line` when possible)
 3. **Primary path** — 1–3 anchors to read first
-4. **Risks** — unproven areas; personal checks; minimal-diff violations
+4. **Risks** — unproven areas; personal checks; check the existing diff against Necessity / Alignment / Noise in [`shared/minimal-diff.md`](shared/minimal-diff.md) and name violations
 
 Do not silently clean up drive-by hunks unless asked.
 
