@@ -1,6 +1,6 @@
 # Minimal Diff
 
-> Shared **principle** (not a skill, not a procedure). Entry skills apply it; they own the steps.
+> Shared **criteria** (not a skill, not a procedure). Entry skills apply them; they own the steps.
 
 ## Statement
 
@@ -8,7 +8,7 @@ Prefer the **smallest change that fully satisfies the stated task** (**diff econ
 
 ## Violations
 
-A hunk or file touch violates this principle when any of the following holds:
+A hunk or file touch fails these criteria when any of the following holds:
 
 | Criterion | Violation |
 |-----------|-----------|
@@ -18,7 +18,7 @@ A hunk or file touch violates this principle when any of the following holds:
 
 If the human tightens scope, the reduced boundary **is** the task; anything outside it is still a violation.
 
-## Not this principle
+## Not these criteria
 
 - Hard gates (CI, propose/apply)
 - Correctness or product judgment beyond task fit
