@@ -1,20 +1,20 @@
 # agent-skills
 
-Reusable agent skills and shared principles (soft constraints). Start thin; harden with gates later.
+Reusable agent skills and shared criteria (soft constraints). Start thin; harden with gates later.
 
 ## Interfaces (skills)
 
 | Skill | When | Role |
 |-------|------|------|
-| [`on-write`](skills/on-write/) | Editing code | Scope → edit → self-check; applies [`shared/minimal-diff.md`](shared/minimal-diff.md) |
-| [`on-submit`](skills/on-submit/) | Before commit/merge, or when a reading guide is needed | Survey → four-block guide; applies minimal-diff in Risks; no edits by default |
-| [`write-skill`](skills/write-skill/) | Editing skills / shared principles | Author skills under this repo's conventions; applies minimal-diff |
+| [`on-write`](skills/on-write/) | Editing code | Produce a scoped change while editing |
+| [`on-submit`](skills/on-submit/) | Before commit/merge, or when a reading guide is needed | Orient a human on a change set; no edits by default |
+| [`write-skill`](skills/write-skill/) | Editing skills / shared criteria | Author skills and shared criteria in this repo |
 
 ## Shared (not skills)
 
 | File | Role |
 |------|------|
-| [`shared/minimal-diff.md`](shared/minimal-diff.md) | Principle only (statement + violation criteria); no procedures |
+| [`shared/minimal-diff.md`](shared/minimal-diff.md) | Criteria only (statement + violations); no procedures |
 
 Craft vocabulary for authoring skills: install Matt Pocock's [`writing-great-skills`](https://github.com/mattpocock/skills/tree/main/skills/productivity/writing-great-skills) via `npx skills add mattpocock/skills@writing-great-skills` (used by **write-skill**, not vendored here).
 
