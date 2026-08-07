@@ -8,15 +8,16 @@ description: >-
 
 ## Required criteria
 
-Before any edit, read [`shared/minimal-diff.md`](shared/minimal-diff.md).
+Before any edit, read [`shared/minimal-diff.md`](shared/minimal-diff.md) and [`shared/task-split.md`](shared/task-split.md).
 
 ## Steps
 
 ### Scope
 
-**Done when:** one outcome sentence; intended surfaces listed (or "discover then lock"); refused drive-bys named; unclear scope asked and answered.
+**Done when:** one outcome sentence; intended surfaces listed (or "discover then lock"); refused drive-bys named; oversized work split or explicitly kept bundled; unclear scope asked and answered.
 
 - Restate the task (outcome, not implementation).
+- Apply Single outcome / Sprawl / Deferred split in [`shared/task-split.md`](shared/task-split.md): split into sequential landings, or get an explicit human OK to bundle—before writing.
 - List intended surfaces, or "discover then lock".
 - Name refused drive-bys (see Necessity / Alignment / Noise in [`shared/minimal-diff.md`](shared/minimal-diff.md)).
 - If unclear, ask before writing.
@@ -30,7 +31,7 @@ Before any edit, read [`shared/minimal-diff.md`](shared/minimal-diff.md).
 
 ### Self-check
 
-**Done when:** every hunk passes Necessity / Alignment / Noise in [`shared/minimal-diff.md`](shared/minimal-diff.md); failures reverted; ready to present.
+**Done when:** every hunk passes Necessity / Alignment / Noise in [`shared/minimal-diff.md`](shared/minimal-diff.md); the landing still meets Single outcome in [`shared/task-split.md`](shared/task-split.md); failures reverted; ready to present.
 
 - If the human tightens scope, strip to that boundary—do not re-argue.
 - No submit-phase reading guide here → **on-submit**.
