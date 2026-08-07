@@ -20,6 +20,7 @@ If the human tightens scope, the reduced boundary **is** the task; anything outs
 
 ## Not these criteria
 
+- Whether the **task itself** is too large to be one landing
 - Hard gates (CI, propose/apply)
 - Correctness or product judgment beyond task fit
 - How to narrate a change for humans
