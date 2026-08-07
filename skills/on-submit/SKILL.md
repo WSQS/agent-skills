@@ -42,7 +42,18 @@ Do not silently clean up drive-by hunks unless asked.
 - Check touched or nearby docs for stale claims, missing mentions of new behavior, or contradictions with the diff.
 - Report findings after the guide (aligned / stale / missing / N/A, with `path:line` when possible). Do not invent a doc rewrite unless the human asks.
 
-Further submit-phase checks (tests, etc.) follow this same slot: **after Emit guide**, each as its own step, report-only unless asked to fix.
+### Test coverage
+
+**Done when:** it is clear whether the change's behavior is exercised by tests—and any gaps are named with evidence (or explicitly "no test surface in scope").
+
+- Reuse Survey evidence; do not re-dump the tree.
+- Ask: given the claimed task and touched code/config, which behaviors ought to be covered by tests?
+- Check for nearby or conventional tests: missing coverage of new/changed behavior, tests not updated with the diff, or obvious untested paths on the primary path.
+- If the repo already has a coverage report or a cheap, established coverage command, cite its signal when it helps; do not treat a percentage gate as required.
+- Report findings after the guide (covered / gaps / missing / N/A, with `path:line` or test names when possible).
+- **Default disposition for gaps:** recommend a **new issue + PR** to add or expand tests—do not fold that work into this landing. Exceptions only when the human explicitly asks to bundle tests here, or the stated task itself requires co-landing tests (without them the outcome is incomplete).
+
+Further submit-phase checks follow this same slot: **after Emit guide**, each as its own step, report-only unless asked to fix.
 
 ## Out of scope
 
@@ -50,3 +61,4 @@ Further submit-phase checks (tests, etc.) follow this same slot: **after Emit gu
 - Hard merge gates
 - Full adversarial review unless asked
 - Authoring or rewriting product narrative docs unless asked after the guide
+- Filling test gaps in this landing (default: separate issue + PR) unless an exception above applies
