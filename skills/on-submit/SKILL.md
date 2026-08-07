@@ -17,7 +17,7 @@ Before surveying, read [`shared/minimal-diff.md`](shared/minimal-diff.md).
 
 ### Survey
 
-**Done when:** enough evidence for the four blocks below, without whole-file dumps.
+**Done when:** enough evidence for the guide and later checks, without whole-file dumps.
 
 - **Narrow → Extract → Evidence**: locate (`path:line` / symbol), extract slices, answer from evidence.
 - Note claimed task, touched surfaces, and likely Necessity / Alignment / Noise violations in [`shared/minimal-diff.md`](shared/minimal-diff.md).
@@ -33,9 +33,20 @@ Before surveying, read [`shared/minimal-diff.md`](shared/minimal-diff.md).
 
 Do not silently clean up drive-by hunks unless asked.
 
+### Doc consistency
+
+**Done when:** it is clear whether related docs match the change—and any gaps or contradictions are named with evidence (or explicitly "no doc surface in scope").
+
+- Reuse Survey evidence; do not re-dump the tree.
+- Ask: given the claimed task and touched code/config, which docs (README, CONTEXT, design notes, contract-like comments, skill text, etc.) ought to stay true?
+- Check touched or nearby docs for stale claims, missing mentions of new behavior, or contradictions with the diff.
+- Report findings after the guide (aligned / stale / missing / N/A, with `path:line` when possible). Do not invent a doc rewrite unless the human asks.
+
+Further submit-phase checks (tests, etc.) follow this same slot: **after Emit guide**, each as its own step, report-only unless asked to fix.
+
 ## Out of scope
 
 - Write-phase editing → **on-write**
 - Hard merge gates
 - Full adversarial review unless asked
-- Product-repo narrative docs unless asked
+- Authoring or rewriting product narrative docs unless asked after the guide
