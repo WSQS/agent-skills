@@ -21,13 +21,7 @@ Before editing skill text, read [`shared/minimal-diff.md`](shared/minimal-diff.m
 
 - Name the artifact: entry skill vs `shared/` criteria.
 - One job per skill; cross-cutting rules go in `shared/`, not copied into every entry.
-- For general craft vocabulary, use Matt Pocock's **writing-great-skills** (install if missing; read it; do not paste it in):
-
-  ```bash
-  npx skills add mattpocock/skills@writing-great-skills
-  ```
-
-  https://github.com/mattpocock/skills/tree/main/skills/productivity/writing-great-skills
+- For general craft vocabulary, use Matt Pocock's **writing-great-skills** (install if missing; read it; do not paste it in) — https://github.com/mattpocock/skills/tree/main/skills/productivity/writing-great-skills
 
 ### Draft
 

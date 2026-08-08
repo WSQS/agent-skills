@@ -17,7 +17,14 @@ Reusable agent skills and shared criteria (soft constraints). Start thin; harden
 | [`shared/minimal-diff.md`](shared/minimal-diff.md) | Diff surface (anti drive-by) |
 | [`shared/task-split.md`](shared/task-split.md) | Task boundary (split vs bundle) |
 
-Craft vocabulary for authoring skills: install Matt Pocock's [`writing-great-skills`](https://github.com/mattpocock/skills/tree/main/skills/productivity/writing-great-skills) via `npx skills add mattpocock/skills@writing-great-skills` (used by **write-skill**, not vendored here).
+## Companion skills (not vendored)
+
+External skills referenced by entries above. Install on demand; read them in place—do not paste into this repo.
+
+| Companion | Used by | Install |
+|-----------|---------|---------|
+| [`writing-great-skills`](https://github.com/mattpocock/skills/tree/main/skills/productivity/writing-great-skills) | **write-skill** (craft vocabulary) | `npx skills add mattpocock/skills@writing-great-skills` |
+| [`wayfinder`](https://github.com/mattpocock/skills/tree/main/skills/engineering/wayfinder) | **on-write** (multi-session planning) | `npx skills add mattpocock/skills@wayfinder` |
 
 ## Install
 
@@ -26,9 +33,6 @@ Craft vocabulary for authoring skills: install Matt Pocock's [`writing-great-ski
 npx skills add <owner>/agent-skills@on-write
 npx skills add <owner>/agent-skills@on-submit
 npx skills add <owner>/agent-skills@write-skill
-
-# Craft reference (optional companion):
-npx skills add mattpocock/skills@writing-great-skills
 ```
 
 Local development:
