@@ -40,6 +40,15 @@ Before editing skill text, read [`shared/minimal-diff.md`](shared/minimal-diff.m
 - Apply Necessity / Alignment / Noise in [`shared/minimal-diff.md`](shared/minimal-diff.md) while drafting; do not restate their violation table here.
 - Match the structure and tone of existing skills and criteria in this repo—apply Local fit / Pattern fit / Terminology in [`shared/consistency.md`](shared/consistency.md) while drafting; do not restate its violation table here.
 
+### Editing existing text
+
+**Done when:** every modification of existing skill text is either an additive new line, or a changed line whose relevance to the task is explicit.
+
+- When modifying an existing skill or criterion, prefer **adding new lines** over rewriting existing ones.
+- Rewrite an existing line only when it is **directly relevant** to the stated task—state the relevance if it is not obvious.
+- Do not silently broaden or shift an existing rule's meaning by editing its wording; that is a criteria change, not an edit, and should be visible as such.
+- Out-of-scope wording improvements are drive-bys—Necessity / Alignment / Noise in [`shared/minimal-diff.md`](shared/minimal-diff.md) still apply.
+
 ### Numbered sequences
 
 **Done when:** every `1.` / `2.`-style numeric run in the draft has been found and either kept for a stated reason or removed.
