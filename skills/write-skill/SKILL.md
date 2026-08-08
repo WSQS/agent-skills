@@ -11,7 +11,7 @@ Entry for authoring agent skills (`SKILL.md` and shared criteria).
 
 ## Required criteria
 
-Before editing skill text, read [`shared/minimal-diff.md`](shared/minimal-diff.md).
+Before editing skill text, read [`shared/minimal-diff.md`](shared/minimal-diff.md) and [`shared/consistency.md`](shared/consistency.md).
 
 ## Steps
 
@@ -38,6 +38,7 @@ Before editing skill text, read [`shared/minimal-diff.md`](shared/minimal-diff.m
 - Prefer English in this repo's skill and shared files.
 - Progressive disclosure: keep `SKILL.md` short; link details instead of inlining textbooks.
 - Apply Necessity / Alignment / Noise in [`shared/minimal-diff.md`](shared/minimal-diff.md) while drafting; do not restate their violation table here.
+- Match the structure and tone of existing skills and criteria in this repo—apply Local fit / Pattern fit / Terminology in [`shared/consistency.md`](shared/consistency.md) while drafting; do not restate its violation table here.
 
 ### Numbered sequences
 
@@ -52,6 +53,7 @@ Before editing skill text, read [`shared/minimal-diff.md`](shared/minimal-diff.m
 
 **Done when:** every hunk passes Necessity / Alignment / Noise in [`shared/minimal-diff.md`](shared/minimal-diff.md); description cannot be shortened further without losing ignition; procedures are not sitting in `shared/`.
 
+- Verify the drafted skill text passes Local fit / Pattern fit / Terminology in [`shared/consistency.md`](shared/consistency.md) against existing skills and criteria in this repo; fix divergences, or name them if intentional.
 - Drop lines the model already does by default.
 - Confirm entry vs criteria split.
 - Confirm out-of-scope does not duplicate another entry skill's job.

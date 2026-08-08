@@ -11,7 +11,7 @@ description: >-
 
 ## Required criteria
 
-Before surveying, read [`shared/minimal-diff.md`](shared/minimal-diff.md).
+Before surveying, read [`shared/minimal-diff.md`](shared/minimal-diff.md) and [`shared/consistency.md`](shared/consistency.md).
 
 ## Steps
 
@@ -33,7 +33,7 @@ Before surveying, read [`shared/minimal-diff.md`](shared/minimal-diff.md).
 
 Do not silently clean up drive-by hunks unless asked.
 
-### Doc consistency
+### Doc code consistency
 
 **Done when:** it is clear whether related docs match the change—and any gaps or contradictions are named with evidence (or explicitly "no doc surface in scope").
 
@@ -52,6 +52,16 @@ Do not silently clean up drive-by hunks unless asked.
 - If the repo already has a coverage report or a cheap, established coverage command, cite its signal when it helps; do not treat a percentage gate as required.
 - Report findings after the guide (covered / gaps / missing / N/A, with `path:line` or test names when possible).
 - **Default disposition for gaps:** recommend a **new issue + PR** to add or expand tests—do not fold that work into this landing. Exceptions only when the human explicitly asks to bundle tests here, or the stated task itself requires co-landing tests (without them the outcome is incomplete).
+
+### Convention consistency
+
+**Done when:** it is clear whether the change follows the conventions already in force—and any divergences are named with evidence, and any convention docs the repo ought to have are either present or flagged as missing (or explicitly "no surface with an established convention in scope").
+
+- Reuse Survey evidence; do not re-dump the tree.
+- Ask: does the repo carry authoritative convention docs for the touched surfaces (style guide, CONTRIBUTING, lint config, etc.)? If yes, check the change against the **writing** first; if no, fall back to nearest neighbors and note that the repo is relying on inference.
+- Ask: do the touched code or docs match the naming, style, structure, patterns, and terminology of those authoritative docs or, failing that, their nearest neighbors? Check Local fit / Pattern fit / Terminology in [`shared/consistency.md`](shared/consistency.md).
+- If a convention doc seems due but missing (e.g., multi-contributor repo with no CONTRIBUTING, code with no lint config), flag it as a gap—do not draft it here.
+- Report findings after the guide (fits / diverges / missing-doc / N/A, with `path:line` when possible). Do not propose a convention migration unless the human asks.
 
 Further submit-phase checks follow this same slot: **after Emit guide**, each as its own step, report-only unless asked to fix.
 

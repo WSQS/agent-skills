@@ -8,7 +8,7 @@ description: >-
 
 ## Required criteria
 
-Before any edit, read [`shared/minimal-diff.md`](shared/minimal-diff.md) and [`shared/task-split.md`](shared/task-split.md).
+Before any edit, read [`shared/minimal-diff.md`](shared/minimal-diff.md), [`shared/task-split.md`](shared/task-split.md), and [`shared/consistency.md`](shared/consistency.md).
 
 ## Steps
 
@@ -27,13 +27,15 @@ Before any edit, read [`shared/minimal-diff.md`](shared/minimal-diff.md) and [`s
 
 **Done when:** working-tree changes are only those required by the scoped task.
 
-- Touch only required files; prefer local fixes; match existing style.
+- Touch only required files; prefer local fixes.
+- Match existing style—apply Local fit / Pattern fit / Terminology in [`shared/consistency.md`](shared/consistency.md) continuously; do not restate its violation table here.
 - Apply Necessity / Alignment / Noise in [`shared/minimal-diff.md`](shared/minimal-diff.md) continuously; do not restate their violation table here.
 
 ### Self-check
 
 **Done when:** every hunk passes Necessity / Alignment / Noise in [`shared/minimal-diff.md`](shared/minimal-diff.md); the landing still meets Single outcome in [`shared/task-split.md`](shared/task-split.md); failures reverted; ready to present.
 
+- Verify each touched surface still passes Local fit / Pattern fit / Terminology in [`shared/consistency.md`](shared/consistency.md); fix divergences, or name them if intentional.
 - If the human tightens scope, strip to that boundary—do not re-argue.
 - No submit-phase reading guide here → **on-submit**.
 

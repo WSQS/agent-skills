@@ -16,6 +16,7 @@ Reusable agent skills and shared criteria (soft constraints). Start thin; harden
 |------|------|
 | [`shared/minimal-diff.md`](shared/minimal-diff.md) | Diff surface (anti drive-by) |
 | [`shared/task-split.md`](shared/task-split.md) | Task boundary (split vs bundle) |
+| [`shared/consistency.md`](shared/consistency.md) | Change fits existing conventions (code and docs) |
 
 ## Companion skills (not vendored)
 
@@ -59,4 +60,5 @@ skills/
 shared/
   minimal-diff.md
   task-split.md
+  consistency.md
 ```
