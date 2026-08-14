@@ -63,6 +63,16 @@ Do not silently clean up drive-by hunks unless asked.
 - If a convention doc seems due but missing (e.g., multi-contributor repo with no CONTRIBUTING, code with no lint config), flag it as a gap—do not draft it here.
 - Report findings after the guide (fits / diverges / missing-doc / N/A, with `path:line` when possible). Do not propose a convention migration unless the human asks.
 
+### Logging
+
+**Done when:** it is clear whether the change's logging is about right—and any under- or over-logging is named with evidence (or explicitly "no logging surface in scope").
+
+- Reuse Survey evidence; do not re-dump the tree.
+- Ask: given the changed behavior, are the key paths (entry, branching, failure) actually logged, and are the logs there pulling their weight?
+- **Under-logging:** a new/changed path that fails or branches silently—nothing in the diff would leave a trace when it goes wrong.
+- **Over-logging:** chatty logs in previously quiet paths, redundant logging of the same event, or logs that just narrate normal flow as noise.
+- Report findings after the guide (right / thin / chatty / N/A, with `path:line` when possible). Do not rewrite logging here unless the human asks.
+
 Further submit-phase checks follow this same slot: **after Emit guide**, each as its own step, report-only unless asked to fix.
 
 ## Out of scope
