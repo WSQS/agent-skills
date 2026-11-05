@@ -73,6 +73,16 @@ Do not silently clean up drive-by hunks unless asked.
 - **Over-logging:** chatty logs in previously quiet paths, redundant logging of the same event, or logs that just narrate normal flow as noise.
 - Report findings after the guide (right / thin / chatty / N/A, with `path:line` when possible). Do not rewrite logging here unless the human asks.
 
+### Static verification
+
+**Done when:** relevant project-established static checks have a recorded result—or their absence, unavailability, or disproportionate cost is explicit.
+
+- Reuse Survey and Convention consistency evidence. Discover commands from repo instructions and contribution docs, then CI/hooks/task runners/package scripts, then manifests, lockfiles, and tool config, then the nearest established command.
+- Run the smallest relevant, reasonably cheap, non-mutating checks: syntax/parse/compile, lint, format check, type check, and build/check. Keep behavioral tests under Test coverage; if one aggregate command includes both, run it once and classify its signals.
+- Prefer the project-local or pinned toolchain. Do not install tools, update dependencies or locks, format, auto-fix, or create config unless the human explicitly asks.
+- Report each command as pass / fail / not run, including the exact command, tool version, configuration source, and whether the signal is project-established or advisory. Distinguish syntax failures from configured lint failures.
+- Treat failures as review evidence, not hard merge gates. Do not fix them unless the human asks.
+
 Further submit-phase checks follow this same slot: **after Emit guide**, each as its own step, report-only unless asked to fix.
 
 ## Out of scope
